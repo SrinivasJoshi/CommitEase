@@ -1,0 +1,63 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(3, 23, 93);
+	color: aliceblue;
+	text-align: center;
+}
+h1 {
+	font-weight: 700;
+}
+textarea {
+	background: transparent;
+	border: 1px solid white;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	padding: 5px;
+	color: white;
+	outline: none;
+	height: 80px;
+}
+.loader {
+	display: none;
+	border: 5px solid #f3f3f3; /* Light grey */
+	border-top: 5px solid rgb(3, 23, 93); /* Blue */
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	animation: spin 1.5s linear infinite;
+	margin-top: 10px;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+button {
+	background: transparent;
+	border: 1px solid white;
+	border-radius: 5px;
+	color: white;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+#answer {
+	font-size: 0.8rem;
+	color: white;
+	margin: 20px 0;
+}
+#copy {
+	background: transparent;
+	padding: 0.5rem;
+	font-size: 0.8rem;
+	outline: none;
+	border: 1px solid white;
+	color: white;
+	display: none;
+}

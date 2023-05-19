@@ -1,0 +1,10 @@
+{
+	"name": "CommitEase",
+	"description": "Your trusty assistant for concise and meaningful commit messages",
+	"version": "1.0",
+	"manifest_version": 3,
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": "icon.png"
+	}
+}
