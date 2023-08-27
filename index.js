@@ -16,13 +16,12 @@ button.addEventListener('click', async () => {
 	}
 	//FETCH API
 	let result = await getCommitMessage(text);
-	answer.innerHTML = result;
-	textarea.value = '';
+	textarea.value = 'ANSWER : ' + result;
 	loader.style.display = 'none';
 });
 
 async function getCommitMessage(text) {
-	let query = `Generate a concise and clear commit message with a max limit of 50 characters.I suggest focus on making it more clear and use word limit. Text : "${text}"`;
+	let query = `Rewrite this text in tone :conversational,spartan,very less corporate jargon : "${text}"`;
 	let _body = {
 		model: 'gpt-3.5-turbo',
 		messages: [{ role: 'user', content: query }],
@@ -32,12 +31,13 @@ async function getCommitMessage(text) {
 			method: 'POST',
 			headers: {
 				//prettier-ignore
-				"Authorization": `Bearer TODO: add your api key here`,
+				"Authorization": `Bearer YOUR-OPENAI-API-KEY`,
 				'Content-Type': 'application/json',
 			},
 			body: JSON.stringify(_body),
 		});
 		let result = await _result.json();
+		console.log(result);
 		let finalAns = result.choices[0].message.content;
 		return finalAns;
 	} catch (error) {

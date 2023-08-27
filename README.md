@@ -1,8 +1,8 @@
-# CommitEase - Simplify Your Commit Messages
+# CommitEase - Rewrite your text simply
 
 ## Introduction
 
-CommitEase is a Chrome extension designed to assist developers in writing concise, clear, and apt commit messages. It leverages the power of OpenAI's chatGPT extension to generate appropriate commit messages with ease. Whether you are working on personal projects or collaborating with a team, CommitEase streamlines the process of writing commit messages, saving you time and effort.
+Simple humanized text from chatGPT
 
 ## Tech Used
 
@@ -13,6 +13,8 @@ CommitEase is built using the following technologies:
 - JavaScript: The extension's functionality is developed using JavaScript, including interaction with the chatGPT extension.
 
 ## Installation and Usage
+
+(Add your OpenAPI key in index.js file)
 
 1. Clone the repository
 2. Open Google Chrome and go to chrome://extensions.

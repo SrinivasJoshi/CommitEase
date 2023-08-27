@@ -1,6 +1,6 @@
 {
 	"name": "CommitEase",
-	"description": "Your trusty assistant for concise and meaningful commit messages",
+	"description": "Rewrite text simply",
 	"version": "1.0",
 	"manifest_version": 3,
 	"action": {

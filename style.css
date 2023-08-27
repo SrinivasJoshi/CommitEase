@@ -3,9 +3,11 @@ body {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	background-color: rgb(3, 23, 93);
+	background-color: #171717;
 	color: aliceblue;
 	text-align: center;
+	width: 300px;
+	height: fit-content;
 }
 h1 {
 	font-weight: 700;
@@ -18,12 +20,14 @@ textarea {
 	padding: 5px;
 	color: white;
 	outline: none;
-	height: 80px;
+	height: 150px;
+	width: 90%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .loader {
 	display: none;
 	border: 5px solid #f3f3f3; /* Light grey */
-	border-top: 5px solid rgb(3, 23, 93); /* Blue */
+	border-top: 5px solid #171717; /* Blue */
 	border-radius: 50%;
 	width: 20px;
 	height: 20px;
